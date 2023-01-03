@@ -1,3 +1,5 @@
+/* this is the font  */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Montserrat:ital,wght@0,400;0,900;1,500;1,600&family=Ubuntu&display=swap');
 *,
 *::before,
 *::after{
@@ -11,4 +13,47 @@ html{
 body{
     box-sizing: border-box;
     min-height: 100vh;
+    font-family: Bebas Neue , sans-serif;
+    background-color: rgb(234, 232, 232);
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+/* loader */
+.loader{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.8);
+}
+.loader img{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* imgage container  */
+.img-container{
+    margin:1rem 30% ;
+}
+.img-container img{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+/* media query for large smartphones */
+@media screen and (max-width:600px){
+    h1{
+        font-size:2rem ;
+    }
+    .img-container{
+        margin: 1rem;
+    }
 }
